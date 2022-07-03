@@ -41,7 +41,7 @@ def git():
         shutil.rmtree("Galon/")
     except Exception:
         pass
-    repo = Repo.clone_from(UPSTREAM_REPO)
+    repo = Repo.clone_from(UPSTREAM_REPO, "Galon")
     install_req("pip3 install --no-cache-dir -U -r Galon/requirements.txt")
     print("Fetched Latest Updates!")
 
