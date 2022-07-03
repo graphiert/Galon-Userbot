@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  galon:
+    build: .
+    environment:
+      API_ID: $API_ID
+      API_HASH: $API_HASH
+      SESSION_STRING: $SESSION_STRING
+      HANDLER: $HANDLER
+      BOTLOG_CHATID: $BOTLOG_CHATID
+      ALIVE_PIC: $ALIVE_PIC
+      ALIVE_TEXT: $ALIVE_TEXT
+      MONGO_DB: $MONGO_DB

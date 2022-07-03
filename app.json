@@ -1,0 +1,61 @@
+{
+  "name": "Galon-Userbot",
+  "description": "A Powerful Userbot Based On Pyrogram.",
+  "keywords": [
+    "telegram",
+    "userbot",
+    "galon",
+    "pyrogram"
+  ],
+  "repository": "https://github.com/galihpujiirianto/Galon-Userbot",
+  "env": {
+    "API_ID": {
+      "description": "Dapatkan API ID di https://my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Dapatkan API HASH di https://my.telegram.org",
+      "value": ""
+    },
+    "MONGO_DB": {
+      "description": "Dapatkan Database MongoDB di https://cloud.mongodb.com",
+      "value": ""
+    },
+    "SESSION_STRING": {
+      "description": "String pyrogram kamu.",
+      "value": ""
+    },
+    "BOT_TOKEN": {
+      "description": "Bot token assistant bot.",
+      "value": ""
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Nama heroku app ini, lihat di paling atas.",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Dapatkan HEROKU API KEY dari https://dashboard.heroku.com/account",
+      "required": true
+    },
+    "HANDLER": {
+      "description": "Handler untuk menggunakan perintah userbot.",
+      "required": true,
+      "value": "."
+    },
+    "BOTLOG_CHATID": {
+      "description": "Tambahkan @ChitandaEruRobot ke grup anda dan ketik /id untuk mendapatkan id grup!",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
