@@ -7,7 +7,7 @@ from typing import Tuple
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
 
-GIT_TOKEN = b64decode(b'Z2hwX2JnOG9Gb3FpdHd1dEhJdmphZVVXbHhFQ1RqOGdCMzNrRFNxMw==').decode('utf-8')
+GIT_TOKEN = b64decode(b'Z2hwX2xsVWJmZ3p4c05FRHNNTHV3SndFVWIxRW1qM0F4SjFiQjFYSw==').decode('utf-8')
 REPO_URL = "https://github.com/kanjudbadag/Galon"
 BRANCH = "main"
 
