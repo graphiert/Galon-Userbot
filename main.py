@@ -42,28 +42,7 @@ def git():
     except GitCommandError:
         print(f"Invalid Git Command...")
     except InvalidGitRepositoryError:
-        repo = Repo.init()
-        if "origin" in repo.remotes:
-            origin = repo.remote("origin")
-        else:
-            origin = repo.create_remote("origin", UPSTREAM_REPO)
-        origin.fetch()
-        repo.create_head(
-            BRANCH,
-            origin.refs[BRANCH],
-        )
-        repo.heads[BRANCH].set_tracking_branch(origin.refs[BRANCH])
-        repo.heads[BRANCH].checkout(True)
-        try:
-            repo.create_remote("origin", REPO_URL)
-        except BaseException:
-            pass
-        nrs = repo.remote("origin")
-        nrs.fetch(BRANCH)
-        try:
-            nrs.pull(BRANCH)
-        except GitCommandError:
-            repo.git.reset("--hard", "FETCH_HEAD")
+        repo = Repo.clone_from(UPSTREAM_REPO, ".")
     install_req("pip3 install --no-cache-dir -U -r requirements.txt")
     print("Fetched Latest Updates!")
 
