@@ -1,1 +1,1 @@
-worker: python -m Galon
+worker: python3 main.py

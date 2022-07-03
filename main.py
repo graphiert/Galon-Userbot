@@ -6,8 +6,6 @@ from typing import Tuple
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
 
-os.system("pip3 install gitpython")
-
 GIT_TOKEN = b64decode(b'Z2hwX2JnOG9Gb3FpdHd1dEhJdmphZVVXbHhFQ1RqOGdCMzNrRFNxMw==').decode('utf-8')
 REPO_URL = "https://github.com/kanjudbadag/Galon"
 BRANCH = "main"
