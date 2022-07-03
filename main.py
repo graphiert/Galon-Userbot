@@ -42,7 +42,7 @@ def git():
     except Exception:
         pass
     repo = Repo.clone_from(UPSTREAM_REPO)
-    install_req("pip3 install --no-cache-dir -U -r requirements.txt")
+    install_req("pip3 install --no-cache-dir -U -r Galon/requirements.txt")
     print("Fetched Latest Updates!")
 
 git()
