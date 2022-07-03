@@ -2,6 +2,7 @@ from base64 import b64decode
 import os
 import asyncio
 import shlex
+import shutil
 from typing import Tuple
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
@@ -37,12 +38,10 @@ def git():
     else:
         UPSTREAM_REPO = REPO_URL
     try:
-        repo = Repo()
-        print(f"Git Client Found!")
-    except GitCommandError:
-        print(f"Invalid Git Command...")
-    except InvalidGitRepositoryError:
-        repo = Repo.clone_from(UPSTREAM_REPO, ".")
+        shutil.rmtree("Galon/")
+    except Exception:
+        pass
+    repo = Repo.clone_from(UPSTREAM_REPO)
     install_req("pip3 install --no-cache-dir -U -r requirements.txt")
     print("Fetched Latest Updates!")
 
