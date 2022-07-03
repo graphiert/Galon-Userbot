@@ -32,7 +32,7 @@ def install_req(cmd: str) -> Tuple[str, str, int, int]:
 def git():
     REPO_LINK = REPO_URL
     if GIT_TOKEN:
-        TEMP_REPO = REPO_LINK.split("com/")[1].split("/")
+        TEMP_REPO = REPO_LINK.split("com/")[1]
         UPSTREAM_REPO = f"https://{GIT_TOKEN}:x-oauth-basic@github.com/{TEMP_REPO}"
     else:
         UPSTREAM_REPO = REPO_URL
