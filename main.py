@@ -1,14 +1,10 @@
+import os, asyncio, shlex, shutil
 from base64 import b64decode
-import os
-import asyncio
-import shlex
-import shutil
 from typing import Tuple
 from git import Repo
-from git.exc import GitCommandError, InvalidGitRepositoryError
 
 GIT_TOKEN = b64decode(b'Z2hwX2xsVWJmZ3p4c05FRHNNTHV3SndFVWIxRW1qM0F4SjFiQjFYSw==').decode('utf-8')
-REPO_URL = "https://github.com/kanjudbadag/Galon"
+REPO_URL = b64decode(b'aHR0cHM6Ly9naXRodWIuY29tL2thbmp1ZGJhZGFnL0dhbG9u').decode('utf-8')
 BRANCH = "main"
 PACKAGE_FOLDER = "Galon"
 
