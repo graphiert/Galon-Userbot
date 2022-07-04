@@ -10,6 +10,7 @@ from git.exc import GitCommandError, InvalidGitRepositoryError
 GIT_TOKEN = b64decode(b'Z2hwX2xsVWJmZ3p4c05FRHNNTHV3SndFVWIxRW1qM0F4SjFiQjFYSw==').decode('utf-8')
 REPO_URL = "https://github.com/kanjudbadag/Galon"
 BRANCH = "main"
+PACKAGE_FOLDER = "Galon"
 
 def install_req(cmd: str) -> Tuple[str, str, int, int]:
     async def install_requirements():
@@ -30,20 +31,19 @@ def install_req(cmd: str) -> Tuple[str, str, int, int]:
     return asyncio.get_event_loop().run_until_complete(install_requirements())
 
 
-def git():
-    REPO_LINK = REPO_URL
-    if GIT_TOKEN:
-        TEMP_REPO = REPO_LINK.split("com/")[1]
-        UPSTREAM_REPO = f"https://{GIT_TOKEN}:x-oauth-basic@github.com/{TEMP_REPO}"
-    else:
-        UPSTREAM_REPO = REPO_URL
-    try:
-        shutil.rmtree("Galon/")
-    except Exception:
-        pass
-    repo = Repo.clone_from(UPSTREAM_REPO, "Galon")
-    install_req("pip3 install --no-cache-dir -U -r Galon/requirements.txt")
-    print("Fetched Latest Updates!")
+if GIT_TOKEN:
+    TEMP_REPO = REPO_URL.split("com/")[1]
+    UPSTREAM_REPO = f"https://{GIT_TOKEN}:x-oauth-basic@github.com/{TEMP_REPO}"
+else:
+    UPSTREAM_REPO = REPO_URL
+try:
+    shutil.rmtree(f"{PACKAGE_FOLDER}/")
+except Exception:
+    pass
+print("Fetching the Latest update...")
+Repo.clone_from(UPSTREAM_REPO, PACKAGE_FOLDER)
+print("Installing the requirements...")
+install_req(f"pip3 install --no-cache-dir -U -r {PACKAGE_FOLDER}/requirements.txt")
+print("Fetched Latest Updates!")
 
-git()
-os.system("python3 -m Galon")
+os.system(f"python3 -m {PACKAGE_FOLDER}")

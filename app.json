@@ -25,10 +25,6 @@
       "description": "String pyrogram kamu.",
       "value": ""
     },
-    "BOT_TOKEN": {
-      "description": "Bot token assistant bot.",
-      "value": ""
-    },
     "HEROKU_APP_NAME": {
       "description": "Nama heroku app ini, lihat di paling atas.",
       "required": true
