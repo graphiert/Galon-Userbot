@@ -37,7 +37,7 @@ Keunggulan untuk penggunaan:
 
 ### Pasang Galon-Userbot melalui Heroku:
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/galihpujiirianto/Galon-Userbot)
-
+[![Deploy Via Bot Telegram](https://img.shields.io/badge/Deploy%20Via%20Bot%20Telegram-1b77FF.svg?style=for-the-badge&logo=telegram)](https://t.me/XTZ_HerokuBot)
 </details>
 
 <details>
@@ -62,4 +62,5 @@ Keunggulan untuk penggunaan:
 
 ## 📑 License
 [![GNU General Public License](https://www.gnu.org/graphics/gplv3-127x51.png)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
 Licensed under [GNU General Public License v3.0](./LICENSE). All designs were created by [@galihpujiirianto](https://github.com/galihpujiirianto)
