@@ -1,8 +1,8 @@
-# 🔥 GALON-USERBOT 🔥
+## 🔥 GALON-USERBOT 🔥
 
 ![Header](https://telegra.ph/file/f0dd3b0fba525a5ee451b.jpg)
 
-## Telah hadir, Galon-Userbot!
+### Telah hadir, Galon-Userbot!
 Sebuah Telegram userbot yang berjalan di Python Pyrogram untuk bersenang-senang dan untuk kegiatan serius di Telegram.
 
 Keunggulan secara software:
@@ -38,6 +38,10 @@ Keunggulan untuk penggunaan:
 ### Pasang Galon-Userbot melalui Heroku:
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/galihpujiirianto/Galon-Userbot)
 [![Deploy Via Bot Telegram](https://img.shields.io/badge/Deploy%20Via%20Bot%20Telegram-1b77FF.svg?style=for-the-badge&logo=telegram)](https://t.me/XTZ_HerokuBot?start=Z2FsaWhwdWppaXJpYW50by9HYWxvbi1Vc2VyYm90IG1haW4)
+
+### Pasang Galon-Userbot melalui Okteto
+[![Deploy di Okteto](https://okteto.com/develop-okteto.svg)](https://cloud.okteto.com/deploy?repository=https://github.com/galihpujiirianto/Galon-Userbot)
+
 </details>
 
 <details>
