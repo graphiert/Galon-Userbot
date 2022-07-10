@@ -17,8 +17,12 @@
       "description": "Dapatkan API HASH di https://my.telegram.org",
       "value": ""
     },
-    "MONGO_DB": {
-      "description": "Dapatkan Database MongoDB di https://cloud.mongodb.com",
+    "REDIS_URI": {
+      "description": "Dapatkan Redis Endpoint di https://redislabs.com",
+      "value": ""
+    },
+    "REDIS_PASSWORD": {
+      "description": "Dapatkan Redis Password di https://redislabs.com",
       "value": ""
     },
     "SESSION_STRING": {
