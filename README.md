@@ -8,7 +8,8 @@ Sebuah Telegram userbot yang berjalan di Python Pyrogram untuk bersenang-senang 
 Keunggulan secara software:
 - Menggunakan bahasa Python yang banyak dipakai,
 - menggunakan libary Pyrogram yang gaya penulisannya lebih mudah, dan
-- menggunakan MongoDB untuk pembacaan data yang lebih mudah.
+- menggunakan Redis untuk pengaksesan data yang lebih cepat.
+- Redis yang didukung dengan RedisJSON untuk mempermudah pembacaan data.
 
 Keunggulan untuk penggunaan:
 - Stabil
@@ -32,14 +33,14 @@ Keunggulan untuk penggunaan:
 
 ### Persyaratan:
 - [Telegram API KEY](https://docs.pyrogram.org/start/setup#api-key)
-- [MongoDB database](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/mongodb)
+- [Redis database](https://telegra.ph/Cara-mendapatkan-variabel-REDIS-URI--REDIS-PASSWORD-07-10)
 - [Pyrogram String Session](https://replit.com/@GalihPuji/telegram-string)
 
-### Pasang Galon-Userbot melalui Heroku:
+### Pasang Galon-Userbot melalui Heroku!
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/galihpujiirianto/Galon-Userbot)
 [![Deploy Via Bot Telegram](https://img.shields.io/badge/Deploy%20Via%20Bot%20Telegram-1b77FF.svg?style=for-the-badge&logo=telegram)](https://t.me/XTZ_HerokuBot?start=Z2FsaWhwdWppaXJpYW50by9HYWxvbi1Vc2VyYm90IG1haW4)
 
-### Pasang Galon-Userbot melalui Okteto
+### Pasang Galon-Userbot melalui Okteto!
 [![Deploy di Okteto](https://okteto.com/develop-okteto.svg)](https://cloud.okteto.com/deploy?repository=https://github.com/galihpujiirianto/Galon-Userbot)
 
 </details>
