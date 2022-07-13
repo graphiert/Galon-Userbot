@@ -29,6 +29,26 @@
       "description": "String pyrogram kamu.",
       "value": ""
     },
+    "SESSION_STRING2": {
+      "description": "String pyrogram kamu. Skip saja jika tidak ingin ada Multi-Client.",
+      "required": false,
+      "value": ""
+    },
+    "SESSION_STRING3": {
+      "description": "String pyrogram kamu. Skip saja jika tidak ingin ada Multi-Client.",
+      "required": false,
+      "value": ""
+    },
+    "SESSION_STRING4": {
+      "description": "String pyrogram kamu. Skip saja jika tidak ingin ada Multi-Client.",
+      "required": false,
+      "value": ""
+    },
+    "SESSION_STRING5": {
+      "description": "String pyrogram kamu. Skip saja jika tidak ingin ada Multi-Client.",
+      "required": false,
+      "value": ""
+    },
     "HEROKU_APP_NAME": {
       "description": "Nama heroku app ini, lihat di paling atas.",
       "required": true
