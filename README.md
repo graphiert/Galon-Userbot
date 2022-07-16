@@ -22,6 +22,7 @@ Keunggulan untuk penggunaan:
 <details>
 <summary>⚠️ Sebelum deploy, baca aku! ⚠️</summary>
 
+### DISCLAIMER: Wajib membaca sebelum mendeploy
 - Gunakan userbot ini sebijak mungkin!
 - Kami tidak akan bertanggung jawab bila sesuatu terjadi.
 - Dalam artian, jika kamu memasang userbot ini, artinya kamu **SIAP DENGAN RESIKO YANG TERJADI.**
@@ -37,7 +38,7 @@ Keunggulan untuk penggunaan:
 - [Pyrogram String Session](https://replit.com/@GalihPuji/telegram-string)
 
 ### Pasang Galon-Userbot melalui Heroku!
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/galihpujiirianto/Galon-Userbot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://deploygalon.vercel.app) -> [WAJIB FORK](https://github.com/galihpujiirianto/Galon-Userbot/fork)!
 [![Deploy Via Bot Telegram](https://img.shields.io/badge/Deploy%20Via%20Bot%20Telegram-1b77FF.svg?style=for-the-badge&logo=telegram)](https://t.me/XTZ_HerokuBot?start=Z2FsaWhwdWppaXJpYW50by9HYWxvbi1Vc2VyYm90IG1haW4)
 
 ### Pasang Galon-Userbot melalui Okteto!
