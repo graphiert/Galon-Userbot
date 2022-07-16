@@ -37,8 +37,15 @@ Keunggulan untuk penggunaan:
 - [Redis database](https://telegra.ph/Cara-mendapatkan-variabel-REDIS-URI--REDIS-PASSWORD-07-10)
 - [Pyrogram String Session](https://replit.com/@GalihPuji/telegram-string)
 
-### Pasang Galon-Userbot melalui Heroku!
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://deploygalon.vercel.app) -> [WAJIB FORK](https://github.com/galihpujiirianto/Galon-Userbot/fork)!
+### Pasang Galon-Userbot melalui Heroku menggunakan website!
+Persyaratan deploy melalui website:
+- Repository harus berasal dari GitHub, bukan dari layanan lain!
+- Username repository tidak boleh menggunakan `galihpujiirianto`!
+- Hanya repository bernama `Galon-Userbot` yang dapat dideploy!
+
+[![Deploy Via Website](https://img.shields.io/badge/Deploy%20Via%20Website-1b77FF.svg?style=for-the-badge&logo=telegram)](https://deploygalon.vercel.app)
+
+### Pasang Galon-Userbot melalui Heroku menggunakan Bot Telegram!
 [![Deploy Via Bot Telegram](https://img.shields.io/badge/Deploy%20Via%20Bot%20Telegram-1b77FF.svg?style=for-the-badge&logo=telegram)](https://t.me/XTZ_HerokuBot?start=Z2FsaWhwdWppaXJpYW50by9HYWxvbi1Vc2VyYm90IG1haW4)
 
 ### Pasang Galon-Userbot melalui Okteto!
