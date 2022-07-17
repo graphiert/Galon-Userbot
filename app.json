@@ -7,7 +7,9 @@
     "galon",
     "pyrogram"
   ],
+  "logo": "https://telegra.ph/file/ed6745ac6d7513a0eb7e4.jpg",
   "repository": "https://github.com/galihpujiirianto/Galon-Userbot",
+  "stack": "container",
   "env": {
     "API_ID": {
       "description": "Dapatkan API ID di https://my.telegram.org",
