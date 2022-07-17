@@ -10,7 +10,7 @@ PACKAGE_FOLDER = "Galon"
 
 if GIT_TOKEN:
     TEMP_REPO = REPO_URL.split("com/")[1]
-    UPSTREAM_REPO = f"https://{GIT_TOKEN}@github.com/{USERNAME}/{TEMP_REPO}.git"
+    UPSTREAM_REPO = f"https://{GIT_TOKEN}@github.com/{TEMP_REPO}.git"
 else:
     UPSTREAM_REPO = REPO_URL
 try:
