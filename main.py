@@ -18,7 +18,7 @@ try:
 except Exception:
     pass
 print("Fetching the Latest updates...")
-run(f"git clone {UPSTREAM_REPO} {PACKAGE_FOLDER}")
+os.system(f"git clone {UPSTREAM_REPO} {PACKAGE_FOLDER}")
 print("Installing the requirements...")
 run(f"pip3 install --no-cache-dir -U -r {PACKAGE_FOLDER}/requirements.txt")
 print("Fetched Latest Updates!")
