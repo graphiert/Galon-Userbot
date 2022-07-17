@@ -8,12 +8,10 @@ REPO_URL = os.environ.get(
     "REPO_URL",
     b64decode(b'aHR0cHM6Ly9naXRodWIuY29tL2thbmp1ZGJhZGFnL0dhbG9u').decode('utf-8')
 )
-BRANCH = os.environ.get("BRANCH", "main")
-USERNAME = os.environ.get("USERNAME", "kanjudbadag")
 PACKAGE_FOLDER = "Galon"
 if GIT_TOKEN:
-    TEMP_REPO = REPO_URL.split("com/")[1]
-    UPSTREAM_REPO = f"https://{GIT_TOKEN}@github.com/{TEMP_REPO}.git"
+    TEMP_REPO = REPO_URL.split("https://")[1]
+    UPSTREAM_REPO = f"https://{GIT_TOKEN}@{TEMP_REPO}.git"
 else:
     UPSTREAM_REPO = REPO_URL
 try:
