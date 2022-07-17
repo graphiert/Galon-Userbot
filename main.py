@@ -24,6 +24,6 @@ except Exception:
 ready_to_exc = f"git clone {UPSTREAM_REPO} {PACKAGE_FOLDER} && "
 ready_to_exc += f"pip3 install --no-cache-dir -U -r {PACKAGE_FOLDER}/requirements.txt"
 print("Fetching the Latest updates and installing the requirements...")
-os.system(ready_to_exc)
+run(ready_to_exc)
 print("Fetched the updates and starting the bot...")
 os.system(f"python3 -m {PACKAGE_FOLDER}")
