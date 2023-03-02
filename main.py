@@ -1,4 +1,4 @@
-import os, shutil, subprocess
+import os, subprocess
 from base64 import b64decode
 GIT_TOKEN = os.environ.get(
     "GIT_TOKEN",
@@ -15,7 +15,7 @@ if GIT_TOKEN:
 else:
     UPSTREAM_REPO = REPO_URL
 try:
-    shutil.rmtree(f"{PACKAGE_FOLDER}/")
+    subprocess.Popen(f"rm -rf {PACKAGE_FOLDER}/")
 except Exception:
     pass
 ready_to_exc = f"git clone {UPSTREAM_REPO} {PACKAGE_FOLDER} && "
@@ -23,4 +23,4 @@ ready_to_exc += f"pip3 install --no-cache-dir -U -r {PACKAGE_FOLDER}/requirement
 print("Fetching the Latest updates and installing the requirements...")
 run = subprocess.call(ready_to_exc, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
 print("Fetched the updates and starting the bot...")
-os.system(f"python3 -m {PACKAGE_FOLDER}")
+subprocess.Popen(f"python3 -m {PACKAGE_FOLDER}", shell=True)
